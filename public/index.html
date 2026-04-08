@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuickChat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>QuickChat</h2>
+
+<input id="name" placeholder="name">
+<input id="room" placeholder="room">
+
+<button onclick="createRoom()">create</button>
+<button onclick="joinRoom()">join</button>
+
+<p id="count">Users: 0</p>
+<p id="typing"></p>
+
+<ul id="chat"></ul>
+
+<input id="msg" placeholder="message">
+<button onclick="sendMsg()">send</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
